@@ -1,0 +1,126 @@
+[
+  {
+    "id": 8001,
+    "level": "3",
+    "tags": ["Layers", "Continuous effects", "Type-changing effects"],
+    "questionSimple": "I control Magus of the Moon and my opponent plays Dress Down. My opponent has a Breeding Pool (a non-basic land that's a Forest and Island). Does Breeding Pool still tap for green or blue mana?",
+    "answerSimple": "No. Breeding Pool is now a basic Mountain and can only tap for red mana. Magus of the Moon's type-changing effect applies in layer 4 (type-changing), making all non-basics into Mountains. Dress Down removes Magus of the Moon's abilities in layer 6, but by the time layer 6 is evaluated, the type-changing effect from layer 4 has already been applied. The Breeding Pool is already a Mountain, so removing Magus's ability doesn't undo that — the layers system doesn't re-evaluate layer 4 after layer 6 runs. The Breeding Pool taps only for red.",
+    "citedRules": ["613.1", "613.3", "613.7"],
+    "includedCards": [
+      {
+        "name": "Magus of the Moon",
+        "type": "Creature — Human Wizard",
+        "manaCost": "{2}{R}",
+        "rulesText": "Nonbasic lands are Mountains.",
+        "power": "2",
+        "toughness": "2",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Dress Down",
+        "type": "Enchantment",
+        "manaCost": "{1}{U}",
+        "rulesText": "When Dress Down enters the battlefield, draw a card. Creatures lose all abilities.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Breeding Pool",
+        "type": "Land — Forest Island",
+        "manaCost": "",
+        "rulesText": "({T}: Add {G} or {U}.)\nAs Breeding Pool enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": ""
+  },
+  {
+    "id": 8002,
+    "level": "2",
+    "tags": ["Summoning sickness", "Vehicles", "Crew"],
+    "questionSimple": "My Smuggler's Copter has been on the battlefield since the beginning of my turn. I crew it during my combat phase. Can it attack?",
+    "answerSimple": "Yes, it can attack. Summoning sickness checks whether the permanent has been under your control continuously since the beginning of your most recent turn — it does not check when the permanent became a creature. Smuggler's Copter was already on the battlefield when your turn started, so it has no summoning sickness, and can attack immediately after being crewed.",
+    "citedRules": ["302.6", "208.2"],
+    "includedCards": [
+      {
+        "name": "Smuggler's Copter",
+        "type": "Artifact — Vehicle",
+        "manaCost": "{2}",
+        "rulesText": "Flying\nWhenever Smuggler's Copter attacks or blocks, you may loot.\nCrew 1",
+        "power": "3",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": ["Flying", "Crew 1"]
+      }
+    ],
+    "url": ""
+  },
+  {
+    "id": 8003,
+    "level": "3",
+    "tags": ["Split Second", "Special actions", "Land plays"],
+    "questionSimple": "My opponent casts Trickbind, which has Split Second. While Trickbind is on the stack, can I play a land from my hand?",
+    "answerSimple": "No, you cannot play a land. Playing a land is a special action and is not a spell or activated ability, so Split Second does not directly prevent it. However, CR 305.1 states that a player may play a land only when the stack is empty. Because Trickbind is on the stack, the precondition for playing a land is not met. You must wait until the stack is empty before playing a land.",
+    "citedRules": ["116.2c", "305.1", "702.61"],
+    "includedCards": [
+      {
+        "name": "Trickbind",
+        "type": "Instant",
+        "manaCost": "{1}{U}",
+        "rulesText": "Split second\nCounter target activated or triggered ability. If a permanent's ability is countered this way, that ability can't be activated this turn.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": ["Split second"]
+      }
+    ],
+    "url": ""
+  },
+  {
+    "id": 8004,
+    "level": "3",
+    "tags": ["Split Second", "Alternative costs", "Counterspells"],
+    "questionSimple": "My opponent casts Krosan Grip, which has Split Second. In response, can I cast Pact of Negation to counter it? What about Mindbreak Trap?",
+    "answerSimple": "No. You cannot cast either spell while Split Second is on the stack. Split Second says 'players can't cast spells' — this applies to all spells, regardless of whether they have an alternative cost, a free cost, or are cast without paying their mana cost. Pact of Negation and Mindbreak Trap are still spells being cast, so Split Second stops them. The only things players can do while Split Second is on the stack are play lands (if the stack were otherwise empty, which it isn't) and activate mana abilities.",
+    "citedRules": ["702.61", "702.61b"],
+    "includedCards": [
+      {
+        "name": "Krosan Grip",
+        "type": "Instant",
+        "manaCost": "{2}{G}",
+        "rulesText": "Split second\nDestroy target artifact or enchantment.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": ["Split second"]
+      },
+      {
+        "name": "Pact of Negation",
+        "type": "Instant",
+        "manaCost": "{0}",
+        "rulesText": "Counter target spell.\nAt the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Mindbreak Trap",
+        "type": "Instant — Trap",
+        "manaCost": "{2}{U}{U}",
+        "rulesText": "If an opponent cast three or more spells this turn, you may pay {0} rather than pay this spell's mana cost.\nExile any number of target spells.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": ""
+  }
+]
