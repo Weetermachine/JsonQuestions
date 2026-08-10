@@ -28,6 +28,11 @@ BILL webhook (push) ─▶ fetch transaction ─▶ diff vs stored ─▶ state 
 - **Deterministic core.** The happy path (job number present and valid) needs
   no AI. Receipt OCR / job inference for missing numbers is a later,
   human-confirmed enrichment layer.
+- **One model everywhere.** The AI layer (phase 2) uses Claude Sonnet
+  (`ANTHROPIC_MODEL`) for all calls — receipt OCR and pricebook item
+  adjudication alike. No Haiku/Sonnet routing: at this volume the savings
+  (~$7/mo) aren't worth a second model's prompts, behavior, and threshold
+  logic.
 
 ## Getting started
 
