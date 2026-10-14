@@ -46,7 +46,7 @@
     "tags": ["Summoning sickness", "Vehicles", "Crew"],
     "questionSimple": "My Smuggler's Copter has been on the battlefield since the beginning of my turn. I crew it during my combat phase. Can it attack?",
     "answerSimple": "Yes, it can attack. Summoning sickness checks whether the permanent has been under your control continuously since the beginning of your most recent turn — it does not check when the permanent became a creature. Smuggler's Copter was already on the battlefield when your turn started, so it has no summoning sickness, and can attack immediately after being crewed.",
-    "citedRules": ["302.6", "208.2"],
+    "citedRules": ["302.6", "702.122a"],
     "includedCards": [
       {
         "name": "Smuggler's Copter",
@@ -67,7 +67,7 @@
     "tags": ["Split Second", "Special actions", "Land plays"],
     "questionSimple": "My opponent casts Trickbind, which has Split Second. While Trickbind is on the stack, can I play a land from my hand?",
     "answerSimple": "No, you cannot play a land. Playing a land is a special action and is not a spell or activated ability, so Split Second does not directly prevent it. However, CR 305.1 states that a player may play a land only when the stack is empty. Because Trickbind is on the stack, the precondition for playing a land is not met. You must wait until the stack is empty before playing a land.",
-    "citedRules": ["116.2c", "305.1", "702.61"],
+    "citedRules": ["116.2a", "305.1", "702.61"],
     "includedCards": [
       {
         "name": "Trickbind",
