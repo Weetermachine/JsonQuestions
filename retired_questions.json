@@ -1036,5 +1036,54 @@
       }
     ],
     "url": "https://rulesguru.org/?3137RGBwnIIIeMwGG"
+  },
+  {
+    "retiredReason": "CR 508.1d doesn't say how to count conditional requirements whose condition is the attack itself, and neither card has rulings; reading them as vacuously obeyed makes no attack the only legal option, counting them only when triggered makes it the magnet Cyclops alone, and the key's reading allows either Cyclops.",
+    "retiredIn": "2026-10 audit",
+    "id": 5213,
+    "level": "3",
+    "tags": [
+      "Combat",
+      "Continuous effects"
+    ],
+    "questionSimple": "Alec controls Dueling Grounds, Magnetic Web and 2 Ekundu Cyclops, one of which has a magnet counter. What are their legal attacks?",
+    "answerSimple": "Alec can attack with either Ekundu Cyclops, as they both only have one requirement to fulfill. \nAlec has to fulfill as many requirements as they can without violating any restrictions. The text on Dueling Grounds is a restriction while Magnetic Web and Ekundu Cyclops both contain requirements.",
+    "citedRules": [
+      "508.1c",
+      "508.1d"
+    ],
+    "includedCards": [
+      {
+        "name": "Dueling Grounds",
+        "type": "Enchantment",
+        "manaCost": "{1}{G}{W}",
+        "rulesText": "No more than one creature can attack each combat.\nNo more than one creature can block each combat.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Magnetic Web",
+        "type": "Artifact",
+        "manaCost": "{2}",
+        "rulesText": "If a creature with a magnet counter on it attacks, all creatures with magnet counters on them attack if able.\nWhenever a creature with a magnet counter on it attacks, all creatures with magnet counters on them block that creature this turn if able.\n{1}, {T}: Put a magnet counter on target creature.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Ekundu Cyclops",
+        "type": "Creature — Cyclops",
+        "manaCost": "{3}{R}",
+        "rulesText": "If a creature you control attacks, this creature also attacks if able.",
+        "power": "3",
+        "toughness": "4",
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?5213RGBwnIIIg9V06OZxGG"
   }
 ]
