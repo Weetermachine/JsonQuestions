@@ -1,0 +1,1040 @@
+[
+  {
+    "retiredReason": "Two defensible answers: 608.2h LKI of the face-down spell (creature) vs. 400.7j letting the effect find the card it just exiled, now a face-up enchantment; no ruling covers it.",
+    "retiredIn": "2026-10 audit",
+    "id": 19,
+    "level": "2",
+    "tags": [
+      "Resolving objects",
+      "Zone-changes",
+      "Morph cards",
+      "Last known information",
+      "Face-down objects"
+    ],
+    "questionSimple": "Allan controls Possibility Storm and casts a Lumithread Field for its morph cost. Allan will exile cards from the top of their library until they exile a card of what type?",
+    "answerSimple": "Creature. Lumithread Field is exiled face up, and is not a creature in exile. However, Possibility Storm cares about the card type of the spell on the stack, which was a creature.",
+    "citedRules": [
+      "406.3",
+      "608.2h",
+      "702.37a"
+    ],
+    "includedCards": [
+      {
+        "name": "Possibility Storm",
+        "type": "Enchantment",
+        "manaCost": "{3}{R}{R}",
+        "rulesText": "Whenever a player casts a spell from their hand, that player exiles it, then exiles cards from the top of their library until they exile a card that shares a card type with it. That player may cast that card without paying its mana cost. Then they put all cards exiled with this enchantment on the bottom of their library in a random order.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Lumithread Field",
+        "type": "Enchantment",
+        "manaCost": "{1}{W}",
+        "rulesText": "Creatures you control get +0/+1.\nMorph {1}{W}",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Morph"
+        ]
+      }
+    ],
+    "url": "https://rulesguru.org/?19RGBwnIII24wji8GG"
+  },
+  {
+    "retiredReason": "The key ('probably 49,278') is the best result anyone has found, not a proven maximum, so the question has no fixed correct answer.",
+    "retiredIn": "2026-10 audit",
+    "id": 20,
+    "level": "1",
+    "tags": [
+      "Trivia",
+      "Triggered abilities",
+      "Numbers and symbols",
+      "The stack",
+      "Resolving objects"
+    ],
+    "questionSimple": "Analia casts a kicked Rite of Replication targeting their Hamletback Goliath. After all triggers have resolved, what is the greatest total power that they could have among all of their creatures?",
+    "answerSimple": "Probably 49,278.\n\nAnalia chooses the order of the triggers on the stack. Each trigger checks the power of the creature that caused it to trigger when the trigger resolves, so the number of counters it puts on its source will be modified by any changes to that power while the trigger was on the stack.\n\nThere are 15,511,210,043,330,985,984,000,000 different ways to order the triggers on the stack, so it's difficult to be certain of the maximum total power. The best that anyone has <a href=\"https://web.archive.org/web/20150128025103/http://community.wizards.com/content/forum-topic/2951366\">come up with</a> though trial and error is 49,278, but the actual answer may be larger.\n\nIf you're mathematically-inclined and would like to try to find a larger value, or prove that this is the largest, you can take a look at <a href=\"https://math.stackexchange.com/questions/1743298/how-to-find-the-largest-possible-value-when-moving-values-between-n-nodes\">this StackExchange page</a> to get started. (The difficult question is how to stack the triggers from the 5 that just entered, and the best that's been found for that is 24636 = 4106*6. Then to account for the one already on the battlefield, it's obviously optimal to resolve its triggers last, so we double that number and add 6 to get 49,278.)",
+    "citedRules": [
+      "603.3b",
+      "608.2h"
+    ],
+    "includedCards": [
+      {
+        "name": "Rite of Replication",
+        "type": "Sorcery",
+        "manaCost": "{2}{U}{U}",
+        "rulesText": "Kicker {5}\nCreate a token that's a copy of target creature. If this spell was kicked, create five of those tokens instead.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Kicker"
+        ]
+      },
+      {
+        "name": "Hamletback Goliath",
+        "type": "Creature — Giant Warrior",
+        "manaCost": "{6}{R}",
+        "rulesText": "Whenever another creature enters, you may put X +1/+1 counters on this creature, where X is that creature's power.",
+        "power": "6",
+        "toughness": "6",
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?20RGBwnIII27QgKOGG"
+  },
+  {
+    "retiredReason": "Whether a phased-out Hostage Taker leaving the game counts as the 'leaves the battlefield' event for its 610.3 'until' effect (not a trigger, so 702.26k's no-trigger clause doesn't clearly cover it) isn't settled by any rule or ruling.",
+    "retiredIn": "2026-10 audit",
+    "id": 60,
+    "level": "Corner Case",
+    "tags": [
+      "Leaving the game",
+      "Multiplayer",
+      "Zone-changes",
+      "Triggered abilities",
+      "Non-evergreen keywords"
+    ],
+    "questionSimple": "Beau has 1 life and controls a phased-out Hostage Taker that exiled Carter's Axegrinder Giant. Addison casts Brimstone Volley, targeting Beau. What happens as Beau loses the game?",
+    "answerSimple": "All objects owned by Beau leave the game. However the game treats phased-out permanents as nonexistent, and does not see the leaves-the-battlefield event happen. Axegrinder Giant will not return to the battlefield.",
+    "citedRules": [
+      "800.4a",
+      "702.26b",
+      "702.26k"
+    ],
+    "includedCards": [
+      {
+        "name": "Hostage Taker",
+        "type": "Creature — Human Pirate",
+        "manaCost": "{2}{U}{B}",
+        "rulesText": "When this creature enters, exile another target creature or artifact until this creature leaves the battlefield. You may cast that card for as long as it remains exiled, and mana of any type can be spent to cast that spell.",
+        "power": "2",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Axegrinder Giant",
+        "type": "Creature — Giant Warrior",
+        "manaCost": "{4}{R}{R}",
+        "rulesText": "",
+        "power": "6",
+        "toughness": "4",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Brimstone Volley",
+        "type": "Instant",
+        "manaCost": "{2}{R}",
+        "rulesText": "Brimstone Volley deals 3 damage to any target.\nBrimstone Volley deals 5 damage instead if a creature died this turn.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?60RGBwnIIIhyji0y0bGG"
+  },
+  {
+    "retiredReason": "The '29 cards' maximum relies on disputed points, e.g. that Rain of Gore doesn't apply to life gained through Words of Worship's ability (its controller gains the life), and the search over replacement orderings can't be checked as a single key.",
+    "retiredIn": "2026-10 audit",
+    "id": 173,
+    "level": "3",
+    "tags": [
+      "Replacement effects",
+      "Drawing a card",
+      "Life"
+    ],
+    "questionSimple": "Alex controls Alhammarret's Archive, Thought Reflection, Blood Scrivener, Lich, and Words of Worship. Nayeli controls Chains of Mephistopheles, Alms Collector and Rain of Gore. Neither player has any cards in hand. Alex activates Words of Worship once, then moves to their draw step. What is the greatest number of cards that Alex can end up with in their hand, assuming they make the best possible choices? What else happens in that scenario?",
+    "answerSimple": "At most Alex can end up with 29 cards in their hand.\n\nRain of Gore only applies to life gained due to a spell or ability, not a turn-based action, so it won't apply to any life gain caused by Words of Worship. Whenever multiple replacement effects apply to an event (such as Alex drawing a card), the affected player will chose which one to apply first. Once a replacement effect has been applied to an event, it will not apply again to that event or any events contained inside that event.\n\n<p>\n* The event begins as \"draw a card\".\n* Alex chooses to apply Blood Scrivener's effect. The event is \"Draw 2 cards, lose 1 life\".\n* Alex must apply Alms Collector's effect. The event is \"Draw a card, Nayeli draws a card, lose 1 life\".\n* Alex chooses to apply Words of Worship's effect to their draw. The event is \"Gain 5 life, Nayeli draws a card, lose 1 life\".\n* Alex must apply Alhammarret's Archive's first effect to the life gain. The event is \"Gain 10 life, Nayeli draws a card, lose 1 life\".\n* Alex must apply Lich's effect to the life gain. The event is \"Draw 10 cards, Nayeli draws a card, lose 1 life\".\n* Alex must apply Thought Reflection's effect to the first card draw. The event is \"Draw 2 cards, draw 9 cards, Nayeli draws a card, lose 1 life\".\n* Alex draws a card. The event is \"Draw a card, draw 9 cards, Nayeli draws a card, lose 1 life\".\n* Alex chooses to apply Chains of Mephistopheles's effect to the first card draw. The event is \"Discard a card, draw a card, draw 9 cards, Nayeli draws a card, lose 1 life\".\n* Alex discards a card. The event is \"Draw a card, draw 9 cards, Nayeli draws a card, lose 1 life\".\n* Alex must apply Alhammarret's Archive's effect to the first card draw. The event is \"Draw 2 cards, draw 9 cards, Nayeli draws a card, lose 1 life\".\n* Alex draws 2 cards. The event is \"Draw 9 cards, Nayeli draws a card, lose 1 life\".\n* For the next 9 cards draws, Alex chooses to apply and perform Chains of Mephistopheles's effect followed by Alhammarret's Archive and Thought Reflection's effects, making them all \"discard a card, draw 4 cards\". The event is \"Nayeli draws a card, lose 1 life\".\n* Nayeli must apply Chains of Mephistopheles's effect to the card draw, putting a card from their library into their graveyard.\n* Alex loses 1 life.\n</p>\n\nAlex has 29 cards in their hand and 10 cards in their graveyard. Nayeli has 1 card in their graveyard. Alex has lost 1 life.",
+    "citedRules": [
+      "614.5",
+      "616.1",
+      "121.2c",
+      "616.1g"
+    ],
+    "includedCards": [
+      {
+        "name": "Alhammarret's Archive",
+        "type": "Legendary Artifact",
+        "manaCost": "{5}",
+        "rulesText": "If you would gain life, you gain twice that much life instead.\nIf you would draw a card except the first one you draw in each of your draw steps, draw two cards instead.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Thought Reflection",
+        "type": "Enchantment",
+        "manaCost": "{4}{U}{U}{U}",
+        "rulesText": "If you would draw a card, draw two cards instead.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Blood Scrivener",
+        "type": "Creature — Zombie Wizard",
+        "manaCost": "{1}{B}",
+        "rulesText": "If you would draw a card while you have no cards in hand, instead you draw two cards and you lose 1 life.",
+        "power": "2",
+        "toughness": "1",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Lich",
+        "type": "Enchantment",
+        "manaCost": "{B}{B}{B}{B}",
+        "rulesText": "As this enchantment enters, you lose life equal to your life total.\nYou don't lose the game for having 0 or less life.\nIf you would gain life, draw that many cards instead.\nWhenever you're dealt damage, sacrifice that many nontoken permanents. If you can't, you lose the game.\nWhen this enchantment is put into a graveyard from the battlefield, you lose the game.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Words of Worship",
+        "type": "Enchantment",
+        "manaCost": "{2}{W}",
+        "rulesText": "{1}: The next time you would draw a card this turn, you gain 5 life instead.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Chains of Mephistopheles",
+        "type": "Enchantment",
+        "manaCost": "{1}{B}",
+        "rulesText": "If a player would draw a card except the first one they draw in each of their draw steps, that player discards a card instead. If the player discards a card this way, they draw a card. If the player doesn't discard a card this way, they mill a card.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Mill"
+        ]
+      },
+      {
+        "name": "Alms Collector",
+        "type": "Creature — Cat Cleric",
+        "manaCost": "{3}{W}",
+        "rulesText": "Flash\nIf an opponent would draw two or more cards, instead you and that player each draw a card.",
+        "power": "3",
+        "toughness": "4",
+        "loyalty": null,
+        "keywords": [
+          "Flash"
+        ]
+      },
+      {
+        "name": "Rain of Gore",
+        "type": "Enchantment",
+        "manaCost": "{B}{R}",
+        "rulesText": "If a spell or ability would cause its controller to gain life, that player loses that much life instead.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?173RGBwnIII58mDupcvvresCYfuhwSKkGG"
+  },
+  {
+    "retiredReason": "Whether Charmed Pendant 'could produce' white/blue depends on how 106.7's 'ignore whether any costs could be paid' treats an effect that needs the card milled as a cost; no rule or ruling covers it.",
+    "retiredIn": "2026-10 audit",
+    "id": 307,
+    "level": "Corner Case",
+    "tags": [
+      "Mana",
+      "Mana abilities",
+      "Costs",
+      "Activated abilities",
+      "Abilities",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Nathanael controls Charmed Pendant that's a land due to March of the Machines, Conspiracy (naming \"Saproling\"), and Life and Limb. The top card of Nathanael's library is Absorb, which neither player is aware of. If Amya taps Exotic Orchard for mana, what colors of mana can it produce?",
+    "answerSimple": "Unclear. Exotic Orchard cares about what mana Charmed Pendant could produce if any of its mana abilities were to resolve at that time, \"ignoring whether any costs of the ability could or could not be paid\". The rules are unclear on how to handle \"ignored\" costs when the ability cares about them.",
+    "citedRules": [
+      "106.7"
+    ],
+    "includedCards": [
+      {
+        "name": "Charmed Pendant",
+        "type": "Artifact",
+        "manaCost": "{4}",
+        "rulesText": "{T}, Mill a card: For each colored mana symbol in the milled card's mana cost, add one mana of that color. Activate only as an instant.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Mill"
+        ]
+      },
+      {
+        "name": "March of the Machines",
+        "type": "Enchantment",
+        "manaCost": "{3}{U}",
+        "rulesText": "Each noncreature artifact is an artifact creature with power and toughness each equal to its mana value.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Conspiracy",
+        "type": "Enchantment",
+        "manaCost": "{3}{B}{B}",
+        "rulesText": "As this enchantment enters, choose a creature type.\nCreatures you control are the chosen type. The same is true for creature spells you control and creature cards you own that aren't on the battlefield.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Life and Limb",
+        "type": "Enchantment",
+        "manaCost": "{3}{G}",
+        "rulesText": "All Forests and all Saprolings are 1/1 green Saproling creatures and Forest lands in addition to their other types.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Absorb",
+        "type": "Instant",
+        "manaCost": "{W}{U}{U}",
+        "rulesText": "Counter target spell. You gain 3 life.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Exotic Orchard",
+        "type": "Land",
+        "manaCost": "",
+        "rulesText": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?307RGBwnIII3DluEzawgO0MBE2fGG"
+  },
+  {
+    "retiredReason": "Same unresolved 106.7 question as Q307: whether a mana ability that needs the card milled as a cost 'could produce' those colors once costs are ignored.",
+    "retiredIn": "2026-10 audit",
+    "id": 546,
+    "level": "3",
+    "tags": [
+      "Mana",
+      "Mana abilities",
+      "Costs",
+      "Activated abilities",
+      "Abilities",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Arturo controls Harvester Druid and a Charmed Pendant that's currently a land due to March of the Machines, Arcane Adaptation (naming \"Saproling\"), and Life and Limb. If Arturo taps Harvester Druid, what type(s) of mana can it produce?",
+    "answerSimple": "Unclear. Harvester Druid cares about what mana Charmed Pendant could produce if any of its mana abilities were to resolve at that time, \"ignoring whether any costs of the ability could or could not be paid\". The rules are unclear on how to handle \"ignored\" costs when the ability cares about them.",
+    "citedRules": [
+      "106.7"
+    ],
+    "includedCards": [
+      {
+        "name": "Harvester Druid",
+        "type": "Creature — Human Druid",
+        "manaCost": "{1}{G}",
+        "rulesText": "{T}: Add one mana of any color that a land you control could produce.",
+        "power": "1",
+        "toughness": "1",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Charmed Pendant",
+        "type": "Artifact",
+        "manaCost": "{4}",
+        "rulesText": "{T}, Mill a card: For each colored mana symbol in the milled card's mana cost, add one mana of that color. Activate only as an instant.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Mill"
+        ]
+      },
+      {
+        "name": "March of the Machines",
+        "type": "Enchantment",
+        "manaCost": "{3}{U}",
+        "rulesText": "Each noncreature artifact is an artifact creature with power and toughness each equal to its mana value.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Arcane Adaptation",
+        "type": "Enchantment",
+        "manaCost": "{2}{U}",
+        "rulesText": "As this enchantment enters, choose a creature type.\nCreatures you control are the chosen type in addition to their other types. The same is true for creature spells you control and creature cards you own that aren't on the battlefield.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Life and Limb",
+        "type": "Enchantment",
+        "manaCost": "{3}{G}",
+        "rulesText": "All Forests and all Saprolings are 1/1 green Saproling creatures and Forest lands in addition to their other types.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?546RGBwnIIIq7jlXweEOz3mEGG"
+  },
+  {
+    "retiredReason": "The key admits that 401.6 and 701.20d as written don't apply (the card never stopped being revealed and never moved), so the answer depends on what the rules are meant to say.",
+    "retiredIn": "2026-10 audit",
+    "id": 556,
+    "level": "3",
+    "tags": [
+      "Zone-changes",
+      "Activated abilities",
+      "Abilities",
+      "Libraries",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Axton controls Skill Borrower and Sensei's Divining Top. The top card of their library is a Wolfbitten Captive. Axton activates Skill Borrower's ability from Wolfbitten Captive, then activates Sensei's Divining Top's first ability, leaving Wolfbitten Captive on top. Can Axton activate Skill Borrower's ability again?",
+    "answerSimple": "Yes. [401.6] and/or [701.20d] are intended to apply to this situation, even though their current wording doesn't. (Wolfbitten Captive never stopped being revealed since it never stopped being on top of the library, nor were any cards reordered.)",
+    "citedRules": [
+      "401.6",
+      "701.20d"
+    ],
+    "includedCards": [
+      {
+        "name": "Skill Borrower",
+        "type": "Artifact Creature — Human Wizard",
+        "manaCost": "{2}{U}",
+        "rulesText": "Play with the top card of your library revealed.\nAs long as the top card of your library is an artifact or creature card, this creature has all activated abilities of that card.",
+        "power": "1",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Sensei's Divining Top",
+        "type": "Artifact",
+        "manaCost": "{1}",
+        "rulesText": "{1}: Look at the top three cards of your library, then put them back in any order.\n{T}: Draw a card, then put this artifact on top of its owner's library.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Wolfbitten Captive",
+        "type": "Creature — Human Werewolf",
+        "manaCost": "{G}",
+        "rulesText": "{1}{G}: This creature gets +2/+2 until end of turn. Activate only once each turn.\nAt the beginning of each upkeep, if no spells were cast last turn, transform this creature.",
+        "power": "1",
+        "toughness": "1",
+        "loyalty": null,
+        "keywords": [
+          "Transform"
+        ]
+      }
+    ],
+    "url": "https://rulesguru.org/?556RGBwnIIIkJzhHJFpGG"
+  },
+  {
+    "retiredReason": "Read literally, Ali from Cairo's Oracle text would set a -5 life total to 1; the key's -8 relies on an 'intended' reading, and there's no ruling for a life total already below 1.",
+    "retiredIn": "2026-10 audit",
+    "id": 744,
+    "level": "3",
+    "tags": [
+      "Replacement effects",
+      "Damage",
+      "Unsupported answers",
+      "Life"
+    ],
+    "questionSimple": "Armando controls Platinum Angel and their life total is -5. Armando casts Ali from Cairo. After that resolves, Noa casts Lightning Strike targeting Armando. After that resolves, what will Armando's life total be?",
+    "answerSimple": "-8. Although it isn't stated on the card, Ali from Cairo's replacement effect is only intended to apply to damage that would reduce Armando's life total from 1 or greater to less than 1.",
+    "citedRules": [],
+    "includedCards": [
+      {
+        "name": "Platinum Angel",
+        "type": "Artifact Creature — Angel",
+        "manaCost": "{7}",
+        "rulesText": "Flying\nYou can't lose the game and your opponents can't win the game.",
+        "power": "4",
+        "toughness": "4",
+        "loyalty": null,
+        "keywords": [
+          "Flying"
+        ]
+      },
+      {
+        "name": "Ali from Cairo",
+        "type": "Creature — Human",
+        "manaCost": "{2}{R}{R}",
+        "rulesText": "Damage that would reduce your life total to less than 1 reduces it to 1 instead.",
+        "power": "0",
+        "toughness": "1",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Lightning Strike",
+        "type": "Instant",
+        "manaCost": "{1}{R}",
+        "rulesText": "Lightning Strike deals 3 damage to any target.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?744RGBwnIIIjv0inCbkGG"
+  },
+  {
+    "retiredReason": "Same unresolved 106.7 question as Q307/Q546 (revealing the top card doesn't change it).",
+    "retiredIn": "2026-10 audit",
+    "id": 780,
+    "level": "Corner Case",
+    "tags": [
+      "Mana",
+      "Mana abilities",
+      "Costs",
+      "Activated abilities",
+      "Abilities",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Nico controls Charmed Pendant that's a land due to March of the Machines, Xenograft (naming \"Saproling\"), and Life and Limb. The top card of Nico's library is Absorb, which is revealed due to their Garruk's Horde. If Asher taps Fellwar Stone for mana, what colors of mana can it produce?",
+    "answerSimple": "Unclear. Fellwar Stone cares about what mana Charmed Pendant could produce if any of its mana abilities were to resolve at that time, \"ignoring whether any costs of the ability could or could not be paid\". The rules are unclear on how to handle \"ignored\" costs when the ability cares about them.",
+    "citedRules": [
+      "106.7"
+    ],
+    "includedCards": [
+      {
+        "name": "Charmed Pendant",
+        "type": "Artifact",
+        "manaCost": "{4}",
+        "rulesText": "{T}, Mill a card: For each colored mana symbol in the milled card's mana cost, add one mana of that color. Activate only as an instant.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Mill"
+        ]
+      },
+      {
+        "name": "March of the Machines",
+        "type": "Enchantment",
+        "manaCost": "{3}{U}",
+        "rulesText": "Each noncreature artifact is an artifact creature with power and toughness each equal to its mana value.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Xenograft",
+        "type": "Enchantment",
+        "manaCost": "{4}{U}",
+        "rulesText": "As this enchantment enters, choose a creature type.\nEach creature you control is the chosen type in addition to its other types.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Life and Limb",
+        "type": "Enchantment",
+        "manaCost": "{3}{G}",
+        "rulesText": "All Forests and all Saprolings are 1/1 green Saproling creatures and Forest lands in addition to their other types.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Absorb",
+        "type": "Instant",
+        "manaCost": "{W}{U}{U}",
+        "rulesText": "Counter target spell. You gain 3 life.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Garruk's Horde",
+        "type": "Creature — Beast",
+        "manaCost": "{5}{G}{G}",
+        "rulesText": "Trample\nPlay with the top card of your library revealed.\nYou may cast creature spells from the top of your library.",
+        "power": "7",
+        "toughness": "7",
+        "loyalty": null,
+        "keywords": [
+          "Trample"
+        ]
+      },
+      {
+        "name": "Fellwar Stone",
+        "type": "Artifact",
+        "manaCost": "{2}",
+        "rulesText": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?780RGBwnIIIyuHM41lQBg6t7NiCBeGG"
+  },
+  {
+    "retiredReason": "Whether 603.3b puts triggers on the stack one at a time or all at once decides whether one or both abilities are the 'first time' for Kira; there's no rule or ruling on this.",
+    "retiredIn": "2026-10 audit",
+    "id": 921,
+    "level": "2",
+    "tags": [
+      "Triggered abilities",
+      "The stack",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Alayna controls Kira, Great Glass-Spinner, Afiya Grove, and Junkyo Bell. During their upkeep, Junkyo Bell and Afiya Grove both target Kira, Great Glass-Spinner. Which ability is countered?",
+    "answerSimple": "The rules don't provide an answer to this question.\n\n[603.3b] states that Alayna puts triggers onto the stack \"in any order they choose\", which is an ambiguous statement- it could mean that the triggers are all placed onto the stack simultaneously and their order on the stack is chosen by Alayna. In that case Kira, Great Glass-Spinner would counter both triggers.\n\nIt could also mean that Alayna puts the triggers onto the stack sequentially, in an order of their choice. In that case the trigger that Alayna puts onto the stack first will be countered by Kira, Great Glass-Spinner.",
+    "citedRules": [
+      "603.3b"
+    ],
+    "includedCards": [
+      {
+        "name": "Kira, Great Glass-Spinner",
+        "type": "Legendary Creature — Spirit",
+        "manaCost": "{1}{U}{U}",
+        "rulesText": "Flying\nCreatures you control have \"Whenever this creature becomes the target of a spell or ability for the first time each turn, counter that spell or ability.\"",
+        "power": "2",
+        "toughness": "2",
+        "loyalty": null,
+        "keywords": [
+          "Flying"
+        ]
+      },
+      {
+        "name": "Afiya Grove",
+        "type": "Enchantment",
+        "manaCost": "{1}{G}",
+        "rulesText": "This enchantment enters with three +1/+1 counters on it.\nAt the beginning of your upkeep, move a +1/+1 counter from this enchantment onto target creature.\nWhen this enchantment has no +1/+1 counters on it, sacrifice it.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Junkyo Bell",
+        "type": "Artifact",
+        "manaCost": "{4}",
+        "rulesText": "At the beginning of your upkeep, you may have target creature you control get +X/+X until end of turn, where X is the number of creatures you control. If you do, sacrifice that creature at the beginning of the next end step.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?921RGBwnIIIi3nQtkHHGG"
+  },
+  {
+    "retiredReason": "107.3j (X in a copied ability is 0) and 107.3m (an ETB trigger uses the X of the spell that became the object) conflict here, and neither the Altered Ego nor the Gadwick rulings decide it.",
+    "retiredIn": "2026-10 audit",
+    "id": 1025,
+    "level": "3",
+    "tags": [
+      "Copy effects",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Alex casts Altered Ego with X=4 and would like to have it copy their Gadwick, the Wizened. How many cards will they draw?",
+    "answerSimple": "Unclear. [107.3j] says that X in an ability gained due to a copy effect is 0. However [107.3m] says that X in an enters-the-battlefield triggered ability is equal to the value of X for the spell that became that object. The rules don't clarify which of these is supposed to take precedence here.",
+    "citedRules": [
+      "107.3j",
+      "107.3m"
+    ],
+    "includedCards": [
+      {
+        "name": "Altered Ego",
+        "type": "Creature — Shapeshifter",
+        "manaCost": "{X}{2}{G}{U}",
+        "rulesText": "This spell can't be countered.\nYou may have this creature enter as a copy of any creature on the battlefield, except it enters with X additional +1/+1 counters on it.",
+        "power": "0",
+        "toughness": "0",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Gadwick, the Wizened",
+        "type": "Legendary Creature — Human Wizard",
+        "manaCost": "{X}{U}{U}{U}",
+        "rulesText": "When Gadwick enters, draw X cards.\nWhenever you cast a blue spell, tap target nonland permanent an opponent controls.",
+        "power": "3",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?1025RGBwnIII1uEMB8GG"
+  },
+  {
+    "retiredReason": "303.4f doesn't say whether an Aura entering without being cast is checked with its characteristics in the graveyard (black) or as it would exist on the battlefield (colorless under Thran Lens); 614.12 covers only replacement effects.",
+    "retiredIn": "2026-10 audit",
+    "id": 1131,
+    "level": "3",
+    "tags": [
+      "Evergreen keywords",
+      "State-based actions",
+      "Zone-changes",
+      "Auras",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Asher controls Thran Lens and Giver of Runes which has given Nephalia Seakite protection from colorless. Asher then casts Redress Fate with Sadistic Obsession in the graveyard. Can it enchant Nephalia Seakite? If so, what happens?",
+    "answerSimple": "Unclear. Auras entering the battlefield can only enchant legal permanents, but it's not specified whether the legality is checked considering their characteristics in the previous zone or on the battlefield.\n\nIf it can enchant Nephalia Seakite, it will die the next time state-based actions are checked.",
+    "citedRules": [
+      "303.4f",
+      "704.5m",
+      "702.16c"
+    ],
+    "includedCards": [
+      {
+        "name": "Thran Lens",
+        "type": "Artifact",
+        "manaCost": "{2}",
+        "rulesText": "All permanents are colorless.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Giver of Runes",
+        "type": "Creature — Kor Cleric",
+        "manaCost": "{W}",
+        "rulesText": "{T}: Another target creature you control gains protection from colorless or from the color of your choice until end of turn.",
+        "power": "1",
+        "toughness": "2",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Nephalia Seakite",
+        "type": "Creature — Bird",
+        "manaCost": "{3}{U}",
+        "rulesText": "Flash\nFlying",
+        "power": "2",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": [
+          "Flash",
+          "Flying"
+        ]
+      },
+      {
+        "name": "Redress Fate",
+        "type": "Sorcery",
+        "manaCost": "{6}{W}{W}",
+        "rulesText": "Return all artifact and enchantment cards from your graveyard to the battlefield.\nMiracle {3}{W}",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Miracle"
+        ]
+      },
+      {
+        "name": "Sadistic Obsession",
+        "type": "Enchantment — Aura",
+        "manaCost": "{3}{B}",
+        "rulesText": "Enchant creature\nEnchanted creature has \"{B}, {T}: Put a -1/-1 counter on target creature.\"",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Enchant"
+        ]
+      }
+    ],
+    "url": "https://rulesguru.org/?1131RGBwnIIIwrD708moSyWHXGG"
+  },
+  {
+    "retiredReason": "508.1d doesn't say how to count Viashino Bey's conditional requirements when the condition (Bey attacking) isn't met, so it's unclear which declaration obeys the most requirements.",
+    "retiredIn": "2026-10 audit",
+    "id": 1210,
+    "level": "2",
+    "tags": [
+      "Combat",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Azaria controls 3 Fire Elementals and a Viashino Bey enchanted with Errantry and Lust for War. Which creatures will Azaria need to declare as attackers when they goes to combat?",
+    "answerSimple": "The rules around attacking requirements are a little vague, but here's our best guess:\n\nThere are two requirements in this scenario: \"If Viashino Bey attacks, all creatures you control attack if able\" and \"Viashino Bey attacks each combat if able\". There is also one restriction \"Viashino Bey can only attack alone\".\n\nIf Viashino Bey is chosen as the only attacker, that satisfies the second requirement. It does not satisfy the first, since the Fire Elementals are able to attack, but aren't doing so. However it also satisfies the restriction.\n\nIf some combination of Fire Elementals are chosen as attackers and not Viashino Bey, the first requirement is being satisfied, but not the second. The restriction is being satisfied here as well. \n\nIf no creatures are chosen as attackers, that also satisfies the first requirement but not the second. This also obeys the restriction.\n\nIn all cases there is one requirement being obeyed and one being broken, while satisfying the restriction. Any of them are therefore legal declarations of attack.",
+    "citedRules": [
+      "508.1d"
+    ],
+    "includedCards": [
+      {
+        "name": "Fire Elemental",
+        "type": "Creature — Elemental",
+        "manaCost": "{3}{R}{R}",
+        "rulesText": "",
+        "power": "5",
+        "toughness": "4",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Viashino Bey",
+        "type": "Creature — Lizard",
+        "manaCost": "{2}{R}{R}",
+        "rulesText": "If this creature attacks, all creatures you control attack if able.",
+        "power": "4",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Errantry",
+        "type": "Enchantment — Aura",
+        "manaCost": "{1}{R}",
+        "rulesText": "Enchant creature\nEnchanted creature gets +3/+0 and can only attack alone.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Enchant"
+        ]
+      },
+      {
+        "name": "Lust for War",
+        "type": "Enchantment — Aura",
+        "manaCost": "{2}{R}",
+        "rulesText": "Enchant creature\nWhenever enchanted creature becomes tapped, this Aura deals 3 damage to that creature's controller.\nEnchanted creature attacks each combat if able.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Enchant"
+        ]
+      }
+    ],
+    "url": "https://rulesguru.org/?1210RGBwnIII2CJvEXlAEeKGG"
+  },
+  {
+    "retiredReason": "No rule says what 'return to the battlefield' does to an object that's already on the battlefield (only exile and command zone have 400.8/400.10), so whether it becomes a new object and retriggers is unsettled.",
+    "retiredIn": "2026-10 audit",
+    "id": 1213,
+    "level": "Corner Case",
+    "tags": [
+      "Replacement effects",
+      "Triggered abilities",
+      "Zone-changes",
+      "Unsupported answers",
+      "Linked abilities",
+      "Auras",
+      "Evergreen keywords"
+    ],
+    "questionSimple": "Ahmed controls Yarok, the Desecrated and casts Animate Dead enchanting their The Fugitive Doctor. What happens?",
+    "answerSimple": "The first Animate Dead trigger resolves, bringing The Fugitive Doctor back to the battlefield, which triggers twice due to Animate Dead.\n\nWhen the second Animate Dead trigger resolves, it has already lost \"enchant creature card in a graveyard\", so that part of the trigger does nothing. It then gains another instance \"enchant creature put onto the battlefield with Animate Dead.\" Then it attempts to return the enchanted object to the battlefield.\n\nIt's unclear what this does to an object that's already <b>on</b> the battlefield. It certainly becomes a new object, as per [403.4]. (Which is also in line with [400.8] and [400.10]) But do enters-the-battlefield triggers trigger again? The CR doesn't specify either way, but the glossary entry for \"enters the battlefield\" implies that the answer is no.\n\nIn either case, since the The Fugitive Doctor was put onto the battlefield with some instance of Animate Dead's ability, it satisfies both of its enchant abilities, so it remains attached.",
+    "citedRules": [
+      "400.8",
+      "403.4",
+      "303.4m",
+      "400.10",
+      "607.1a",
+      "607.1c",
+      "607.2c"
+    ],
+    "includedCards": [
+      {
+        "name": "Yarok, the Desecrated",
+        "type": "Legendary Creature — Elemental Horror",
+        "manaCost": "{2}{B}{G}{U}",
+        "rulesText": "Deathtouch, lifelink\nIf a permanent entering causes a triggered ability of a permanent you control to trigger, that ability triggers an additional time.",
+        "power": "3",
+        "toughness": "5",
+        "loyalty": null,
+        "keywords": [
+          "Deathtouch",
+          "Lifelink"
+        ]
+      },
+      {
+        "name": "Animate Dead",
+        "type": "Enchantment — Aura",
+        "manaCost": "{1}{B}",
+        "rulesText": "Enchant creature card in a graveyard\nWhen this Aura enters, if it's on the battlefield, it loses \"enchant creature card in a graveyard\" and gains \"enchant creature put onto the battlefield with this Aura.\" Return enchanted creature card to the battlefield under your control and attach this Aura to it. When this Aura leaves the battlefield, that creature's controller sacrifices it.\nEnchanted creature gets -1/-0.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": [
+          "Enchant"
+        ]
+      },
+      {
+        "name": "The Fugitive Doctor",
+        "type": "Legendary Creature — Time Lord Doctor",
+        "manaCost": "{3}{R}{G}",
+        "rulesText": "When The Fugitive Doctor enters, investigate.\nWhenever The Fugitive Doctor attacks, you may sacrifice a Clue. When you do, target instant or sorcery card in your graveyard gains flashback {2}{R}{G} until end of turn.",
+        "power": "4",
+        "toughness": "4",
+        "loyalty": null,
+        "keywords": [
+          "Investigate"
+        ]
+      }
+    ],
+    "url": "https://rulesguru.org/?1213RGBwnIIImxAFdjkyGG"
+  },
+  {
+    "retiredReason": "Whether Rest in Peace exiling the library cards means the exchange 'can't be completed' under 701.12a is not addressed by any rule or ruling.",
+    "retiredIn": "2026-10 audit",
+    "id": 1640,
+    "level": "3",
+    "tags": [
+      "Exchanges",
+      "Replacement effects",
+      "Graveyard",
+      "Zone-changes",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Natalee controls Rest in Peace. Arthur casts Morality Shift, what happens?",
+    "answerSimple": "Unclear. The rules state that if an entire exchange cannot be completed, the exchange doesn't happen. It's unclear whether the replacement effect generated by Rest in Peace is considered to prevent a part of the exchange from happening.",
+    "citedRules": [
+      "701.12a"
+    ],
+    "includedCards": [
+      {
+        "name": "Rest in Peace",
+        "type": "Enchantment",
+        "manaCost": "{1}{W}",
+        "rulesText": "When this enchantment enters, exile all graveyards.\nIf a card or token would be put into a graveyard from anywhere, exile it instead.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Morality Shift",
+        "type": "Sorcery",
+        "manaCost": "{5}{B}{B}",
+        "rulesText": "Exchange your graveyard and library. Then shuffle your library.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?1640RGBwnIII27c0vuGG"
+  },
+  {
+    "retiredReason": "Tagged 'Silly': the answer is a pun with no rules content and no cited rules, so it can't grade a judge.",
+    "retiredIn": "2026-10 audit",
+    "id": 1969,
+    "level": "1",
+    "tags": [
+      "Silly"
+    ],
+    "questionSimple": "Alex controls Blood Moon, Opalescence, Akoum Hellhound, and Arcane Adaptation naming \"Human\". They cast Exchange of Words, targeting Blood Moon and Akoum Hellhound. Will this change their abilities?",
+    "answerSimple": "Yes, Humans made Landfall on the Moon in 1969.",
+    "citedRules": [],
+    "includedCards": [
+      {
+        "name": "Blood Moon",
+        "type": "Enchantment",
+        "manaCost": "{2}{R}",
+        "rulesText": "Nonbasic lands are Mountains.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Opalescence",
+        "type": "Enchantment",
+        "manaCost": "{2}{W}{W}",
+        "rulesText": "Each other non-Aura enchantment is a creature in addition to its other types and has base power and base toughness each equal to its mana value.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Akoum Hellhound",
+        "type": "Creature — Elemental Dog",
+        "manaCost": "{R}",
+        "rulesText": "Whenever a land you control enters, this creature gets +2/+2 until end of turn.",
+        "power": "0",
+        "toughness": "1",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Arcane Adaptation",
+        "type": "Enchantment",
+        "manaCost": "{2}{U}",
+        "rulesText": "As this enchantment enters, choose a creature type.\nCreatures you control are the chosen type in addition to their other types. The same is true for creature spells you control and creature cards you own that aren't on the battlefield.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Exchange of Words",
+        "type": "Enchantment",
+        "manaCost": "{1}{U}{U}",
+        "rulesText": "When this enchantment enters, choose two target creatures. For as long as this enchantment remains on the battlefield, exchange the text boxes of those creatures.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?1969RGBwnIIImiNj8WjaLWKJvGG"
+  },
+  {
+    "retiredReason": "The key itself only says the 104.4b loop draw 'probably' applies; no rule or ruling says whether a self-referencing text-changing effect is a loop of mandatory actions or just a stable result.",
+    "retiredIn": "2026-10 audit",
+    "id": 3137,
+    "level": "2",
+    "tags": [
+      "Text-changing effects",
+      "Continuous effects",
+      "Unsupported answers",
+      "Leaving the game"
+    ],
+    "questionSimple": "Autumn controls Volrath's Shapeshifter. The top card of their graveyard is another Volrath's Shapeshifter. What are the characteristics of the one on the battlefield?",
+    "answerSimple": "It doesn't have any, since the game is a draw.\n\nThere's a text-changing effect to grant Volrath's Shapeshifter the text of Volrath's Shapeshifter. After applying that effect, its new text creates a new effect to give it the text of Volrath's Shapeshifter. After applying that effect, there's a new effect to do the same. Etc.\n\nThe CR doesn't define what counts as an \"action\", so it's a little unclear whether [731.4] is supposed to apply here, but it probably is.",
+    "citedRules": [],
+    "includedCards": [
+      {
+        "name": "Volrath's Shapeshifter",
+        "type": "Creature — Phyrexian Shapeshifter",
+        "manaCost": "{1}{U}{U}",
+        "rulesText": "As long as the top card of your graveyard is a creature card, this creature has the full text of that card and has the text \"{2}: Discard a card.\"\n{2}: Discard a card.",
+        "power": "0",
+        "toughness": "1",
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?3137RGBwnIIIeMwGG"
+  }
+]

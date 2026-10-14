@@ -4,8 +4,8 @@
     "level": "3",
     "tags": ["Layers", "Continuous effects", "Type-changing effects"],
     "questionSimple": "I control Magus of the Moon and my opponent plays Dress Down. My opponent has a Breeding Pool (a non-basic land that's a Forest and Island). Does Breeding Pool still tap for green or blue mana?",
-    "answerSimple": "No. Breeding Pool is now a basic Mountain and can only tap for red mana. Magus of the Moon's type-changing effect applies in layer 4 (type-changing), making all non-basics into Mountains. Dress Down removes Magus of the Moon's abilities in layer 6, but by the time layer 6 is evaluated, the type-changing effect from layer 4 has already been applied. The Breeding Pool is already a Mountain, so removing Magus's ability doesn't undo that — the layers system doesn't re-evaluate layer 4 after layer 6 runs. The Breeding Pool taps only for red.",
-    "citedRules": ["613.1", "613.3", "613.7"],
+    "answerSimple": "No. Breeding Pool is a nonbasic Land — Mountain and taps only for {R}. Magus of the Moon's type-changing effect is applied in layer 4, before Dress Down removes Magus's ability in layer 6, so the effect still applies even though Magus has lost its ability. Setting Breeding Pool's land type to Mountain removes Forest, Island and their mana abilities and gives it \"{T}: Add {R}\". It doesn't change supertypes, so Breeding Pool doesn't become basic.",
+    "citedRules": ["305.7", "613.1d", "613.1f"],
     "includedCards": [
       {
         "name": "Magus of the Moon",
@@ -87,8 +87,8 @@
     "level": "3",
     "tags": ["Split Second", "Alternative costs", "Counterspells"],
     "questionSimple": "My opponent casts Krosan Grip, which has Split Second. In response, can I cast Pact of Negation to counter it? What about Mindbreak Trap?",
-    "answerSimple": "No. You cannot cast either spell while Split Second is on the stack. Split Second says 'players can't cast spells' — this applies to all spells, regardless of whether they have an alternative cost, a free cost, or are cast without paying their mana cost. Pact of Negation and Mindbreak Trap are still spells being cast, so Split Second stops them. The only things players can do while Split Second is on the stack are play lands (if the stack were otherwise empty, which it isn't) and activate mana abilities.",
-    "citedRules": ["702.61", "702.61b"],
+    "answerSimple": "No. You cannot cast either spell while Split Second is on the stack. Split Second says 'players can't cast other spells' — this applies to all spells, regardless of whether they have an alternative cost, a free cost, or are cast without paying their mana cost. Pact of Negation and Mindbreak Trap are still spells being cast, so Split Second stops them. While a spell with split second is on the stack, players can still activate mana abilities and take special actions (such as turning a face-down creature face up), and triggered abilities still trigger, but no one can cast a spell.",
+    "citedRules": ["702.61a", "702.61b"],
     "includedCards": [
       {
         "name": "Krosan Grip",
