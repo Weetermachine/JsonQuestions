@@ -1085,5 +1085,138 @@
       }
     ],
     "url": "https://rulesguru.org/?5213RGBwnIIIg9V06OZxGG"
+  },
+  {
+    "retiredReason": "The key itself says the rules don't settle this, and I agree. 601.3/601.3a tell you which characteristics and choices to consider when a 'can't cast' effect applies to a spell, but there's no equivalent for playing a land (305.1, 116.2a). 614.17d (check the permanent as it would exist on the battlef",
+    "retiredIn": "2026-10 audit",
+    "id": 2984,
+    "level": "3",
+    "tags": [
+      "Copy effects",
+      "Replacement effects",
+      "Zone-changes",
+      "Lands",
+      "Unsupported answers"
+    ],
+    "questionSimple": "Aranza controls Cornered Market, Vesuva that isn't a copy of anything, and a token copy of Sacred Peaks. Can they play another Vesuva as a copy of Sacred Peaks?",
+    "answerSimple": "Unclear, the rules contradict themselves on this point. [109.2] says that Cornered Market cares about the land's name on the battlefield, not in the hand. But in order for the game to know what its name is on the battlefield, it must have already been played, so it would be too late at that point for Cornered Market's effect to do anything.",
+    "citedRules": [
+      "109.2",
+      "614.17a"
+    ],
+    "includedCards": [
+      {
+        "name": "Cornered Market",
+        "type": "Enchantment",
+        "manaCost": "{2}{W}",
+        "rulesText": "Players can't cast spells with the same name as a nontoken permanent.\nPlayers can't play nonbasic lands with the same name as a nontoken permanent.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Vesuva",
+        "type": "Land",
+        "manaCost": "",
+        "rulesText": "You may have this land enter tapped as a copy of any land on the battlefield.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Sacred Peaks",
+        "type": "Land — Mountain Plains",
+        "manaCost": "",
+        "rulesText": "This land enters tapped.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?2984RGBwnIIIfv442g5tGG"
+  },
+  {
+    "retiredReason": "The 'for as long as' condition is true just before the effect applies (Ogre power 2 vs Old Man 3) and false as soon as it does (Ogre becomes 4/4 under Nixon). 611.2b only covers a duration that ends before the effect first applies, so the CR can be read as 'never applies' (Sonnet) or 'applies and im",
+    "retiredIn": "2026-10 audit",
+    "id": 3388,
+    "level": "Corner Case",
+    "tags": [
+      "Unsupported answers",
+      "Continuous effects",
+      "Control-changing effects",
+      "Activated abilities"
+    ],
+    "questionSimple": "Nixon controls Ethereal Absolution and taps Old Man of the Sea targeting Ainsley's Ogre Warrior. What happens? Can Ogre Warrior attack this turn?",
+    "answerSimple": "Unclear. The continuous effect created by the ability will try to end as soon as it begins, since Ogre Warrior's power will be greater than Old Man of the Sea's as soon as Nixon gains control of it. The CR explains that if the duration specified by the effect would end before the moment it would first apply, the effect will do nothing, but it doesn't account for or explain what would happen if the duration ends at the moment it begins to apply.",
+    "citedRules": [
+      "611.2b"
+    ],
+    "includedCards": [
+      {
+        "name": "Ethereal Absolution",
+        "type": "Enchantment",
+        "manaCost": "{4}{W}{B}",
+        "rulesText": "Creatures you control get +1/+1.\nCreatures your opponents control get -1/-1.\n{2}{W}{B}: Exile target card from an opponent's graveyard. If it was a creature card, you create a 1/1 white and black Spirit creature token with flying.",
+        "power": null,
+        "toughness": null,
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Old Man of the Sea",
+        "type": "Creature — Djinn",
+        "manaCost": "{1}{U}{U}",
+        "rulesText": "You may choose not to untap this creature during your untap step.\n{T}: Gain control of target creature with power less than or equal to this creature's power for as long as this creature remains tapped and that creature's power remains less than or equal to this creature's power.",
+        "power": "2",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": []
+      },
+      {
+        "name": "Ogre Warrior",
+        "type": "Creature — Ogre Warrior",
+        "manaCost": "{3}{R}",
+        "rulesText": "",
+        "power": "3",
+        "toughness": "3",
+        "loyalty": null,
+        "keywords": []
+      }
+    ],
+    "url": "https://rulesguru.org/?3388RGBwnIIIgpoJjAM7GG"
+  },
+  {
+    "retiredReason": "103.8a skips 'the draw step of their first turn', and that wording was written for a turn with exactly one draw step. 103.8a is a game rule rather than a 'skip' effect, so 614.10/614.10a ('next occurrence' handling) don't clearly govern it. The Sphinx ruling ('you'll eventually draw a card for your ",
+    "retiredIn": "2026-10 audit",
+    "id": 4159,
+    "level": "Corner Case",
+    "tags": [
+      "Turn-based actions",
+      "Unsupported answers",
+      "Turn structure"
+    ],
+    "questionSimple": "Audrina plays first and skips their first draw step, then casts Sphinx of the Second Sun. Sphinx triggers in the second main phase, granting an additional beginning phase. Does Audrina get to draw a card in that beginning phase?",
+    "answerSimple": "Unclear. [103.8a] just says that Audrina skips \"the draw step\". It's not specified whether this means \"all draw steps\" or \"the first draw step\".",
+    "citedRules": [
+      "103.8a"
+    ],
+    "includedCards": [
+      {
+        "name": "Sphinx of the Second Sun",
+        "type": "Creature — Sphinx",
+        "manaCost": "{6}{U}{U}",
+        "rulesText": "Flying\nAt the beginning of each of your postcombat main phases, there is an additional beginning phase after this phase.",
+        "power": "6",
+        "toughness": "6",
+        "loyalty": null,
+        "keywords": [
+          "Flying"
+        ]
+      }
+    ],
+    "url": "https://rulesguru.org/?4159RGBwnIIIfFbGG"
   }
 ]
